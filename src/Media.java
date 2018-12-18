@@ -63,5 +63,6 @@ public class Media {
         System.out.println("name = " + name);
         System.out.println("Dato = " + created);
         System.out.println("fileName = " + fileName);
+        System.out.println("Mediatype = Media");
     }
 }

@@ -8,5 +8,13 @@ public class Video extends Media {
     private int videoLengthSeconds = 0;
 
     @Override
-s
+    public void logToConsol(){
+        System.out.println("Class name = Media");
+        System.out.println("filetype = " + filetype);
+        System.out.println("photographName = " + photographName);
+        System.out.println("resolution = " + resolution);
+        System.out.println("videoLengthSeconds = " + videoLengthSeconds);
+        System.out.println("Mediatype = Video");
+    }
+
 }
