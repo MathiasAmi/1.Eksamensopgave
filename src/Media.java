@@ -60,6 +60,7 @@ public class Media {
                 ", fileName='" + fileName + '\'' +
                 '}';
     }
+    // Creates the logtoConsol method with each variables being set. Can be used in the subclasses
     public void logToConsol(){
         System.out.println("Class name = Media");
         System.out.println("assetId = " + assetId);

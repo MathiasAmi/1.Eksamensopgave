@@ -10,6 +10,7 @@ public class Video extends Media {
     private String resolution = "HD";
     private int videoLengthSeconds = 0;
 
+    //Overrides the Media logtoconsol method.
     @Override
     public void logToConsol(){
         System.out.println("Class name = Media");

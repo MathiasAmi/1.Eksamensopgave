@@ -5,6 +5,7 @@ public class Picture extends Media {
     private int height = 0;
     private String photographName = "";
 
+//Overrides the Media logtoconsol method.
     @Override
     public void logToConsol(){
         System.out.println("Class name = Media");

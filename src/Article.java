@@ -6,6 +6,7 @@ public class Article extends Media {
     private String articleText = "";
     private Image image;
 
+    //Overrides the Media logtoconsol method.
     @Override
     public void logToConsol(){
         System.out.println("Class name = Media");
