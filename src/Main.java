@@ -7,6 +7,8 @@ public class Main {
 // Calls for the Test class, and pushes the messages and code.
         Test.test();
 
+        Media media = new Media();
+        media.logToConsol();
     }
 }
 

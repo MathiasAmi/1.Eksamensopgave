@@ -57,4 +57,11 @@ public class Media {
                 ", fileName='" + fileName + '\'' +
                 '}';
     }
+    public void logToConsol(){
+        System.out.println("Class name = Media");
+        System.out.println("assetId = " + assetId);
+        System.out.println("name = " + name);
+        System.out.println("Dato = " + created);
+        System.out.println("fileName = " + fileName);
+    }
 }
