@@ -46,28 +46,29 @@ public class Main {
         }
         return filesList;
     }
-
+// Creates the method that makes it possible to know what type each file is.
     public static File[] readMediaFolderExtend(String folderNavn){
         File dir = new File(folderNavn);
         File[] filesList = dir.listFiles();
         for (int i = 0; i < filesList.length; i++) {
             if (filesList[i].isFile()){
                 String strings = filesList[i].toString();
-
+// Creates an if statement for picture, that outprint for picture if it contains these types of files.
                 if (strings.contains(".jpg") || strings.contains(".png") || strings.contains(".gif")) {
                     Picture picture = new Picture();
                     System.out.println("A new picture object was created ");
                 }
-
+// Creates an else if statement that runs if the first if statement isn't true. then it prints for video.
                     else if (strings.contains(".mp4") || strings.contains(".m4v") || strings.contains(".mov")) {
                     Video video = new Video();
                     System.out.println("A new video object was created ");
                 }
-
+// Creates an else if statement that tuns if the two first statements isn't true. Prints for article
                         else if (strings.contains(".txt")) {
                     Article article = new Article();
                     System.out.println("A new article object was created ");
                 }
+// If none of the above is the case, then it prints a message saying it wasn't recognized.
                 else{
                     System.out.println("Filetype was not recognized ");
                 }
@@ -76,6 +77,7 @@ public class Main {
                 System.out.println("file was not recognized");
             }
                 }
+// returns the method.
 return filesList;
             }
 

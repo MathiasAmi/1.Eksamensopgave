@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Video extends Media {
     // Class variables
 
@@ -17,4 +20,7 @@ public class Video extends Media {
         System.out.println("Mediatype = Video");
     }
 
+
 }
+
+

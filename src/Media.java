@@ -1,4 +1,7 @@
 import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.time.Instant;
 import java.util.Date;
 
@@ -65,4 +68,9 @@ public class Media {
         System.out.println("fileName = " + fileName);
         System.out.println("Mediatype = Media");
     }
+
+
+
+
 }
+
