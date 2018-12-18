@@ -3,18 +3,18 @@ import java.time.Instant;
 import java.util.Date;
 
 public class Media {
-
+// Creates variables in a private class. It is hidden from the other classes within the package.
     private int assetId;
     private String name;
     private Date created = new Date();
     private String fileName;
 
-
+// Uses the generate method from the MediaID class. Shows the date the Media ID was created.
     public Media() {
         assetId = MediaID.generate();
         created = Date.from(Instant.now());
     }
-
+// Getters and setters
     public int getAssetId() {
         return assetId;
     }
@@ -47,6 +47,7 @@ public class Media {
         this.fileName = fileName;
     }
 
+    // Overrides the original toString method, and returns the new string.
     @Override
     public String toString() {
         return "Media{" +
